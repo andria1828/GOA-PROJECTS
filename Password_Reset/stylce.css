@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color:#1d2737;
+}
+
+
+
+input[type="email"] {
+    border-radius: 25px;
+    text-align: left;
+    height: 30px;
+    width: 250px;
+    padding-left: 15px;
+    border: 2px solid white; 
+}
+
+input[type="email"]:focus {
+    animation-name: animation1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation1 {
+    0% {
+    box-shadow: 0 0 5px white;
+    scale: 102%;
+    }
+    25% {
+    box-shadow: 0 0 2.5px white;
+    scale: 100%;
+    }
+    50% {
+    box-shadow: 0 0 5px white;
+    scale: 102%;
+    }
+    75% {
+    box-shadow: 0 0 2.5px white;
+    scale: 100%;
+    }
+    100% {
+    box-shadow: 0 0 5px white;
+    scale: 102%;
+    }
+  }
+
+@keyframes animation2 {
+  0% {
+  text-shadow: 0 0 7px white;
+  scale: 105%;
+  }
+  25% {
+  text-shadow: 0 0 3.5px white;
+  scale: 100%;
+  }
+  50% {
+  text-shadow: 0 0 7px white;
+  scale: 105%;
+  }
+  75% {
+  text-shadow: 0 0 3.5px white;
+  scale: 100%;
+  }
+  100% {
+  text-shadow: 0 0 7px white;
+  scale: 105%;
+  }
+}
+
+.form {
+    color: black;
+    display: flex;
+    box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s ;
+    flex-direction: column;
+    gap: 40px; 
+    width: 400px;
+    align-items: center;
+    border: 2px solid black;
+    height: 400px;
+    backdrop-filter: blur(100px);
+    border-radius: 25px;
+}
+
+#txt1 {
+    color: white;
+    font-size: 25px;
+    animation-name: animation2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    scale: 101%;
+}
+
+.form:first-child {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+
+.lgin {
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    color: black;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.lgin:hover {
+    scale: 101%;
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.8);
+}
+
+#rgst {
+    transition: all 0.4s;
+
+}
+#rgst:hover {
+    text-shadow: 0 0 8px #6500ff;
+}
+
+.main {
+    margin-top: 125px;
+}
+
+.psw {
+    margin-left: 120px;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+
+.psw:hover {
+    text-shadow: 0 0 8px #6500ff;
+}
+
+.back a {
+    color: black;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    border-radius: 25px;
+    height: 40px;
+    background-color: white;
+    transition: all 0.4s;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.back:hover {
+    scale: 102%;
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 400px) {  
+    .form {
+        width: 300px;
+    }
+}
+
+@media (max-width: 304px) {
+    .form {
+        width: 260px;
+    }
+    .lgin {
+        width: 150px;
+    }
+    input[type="email"] {
+        width: 150px;
+    }
+}
+
+@media (max-width: 244px) {
+    .form {
+        width: 200px;
+        height: 250px;
+    }
+    #txt1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 203px) {
+    .form {
+        width: 150px;
+        height: 190px;
+    }
+    #txt1 {
+        font-size: 12.5px;
+    }
+    input[type="email"] {
+        width: 130px;
+        font-size: 10px;
+    }
+    .lgin {
+        height: 25px;
+        font-size: 10px;
+        width: 110px;
+    }
+    .back {
+        width: 160px;
+    }
+}
+
+@media (max-width: 185px) {
+    input[type="email"] {
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 161px) {
+    .back {
+        font-size: 12px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 150px) {
+    .form {
+        width: 125px;
+        height: 170px;
+    }
+    #txt1 {
+        font-size: 10px;
+    }
+    input[type="email"] {
+        width: 100px;
+        font-size: 7px;
+    }
+    .lgin {
+        height: 25px;
+        font-size: 8px;
+        width: 75px;
+    }
+    .back {
+        font-size: 10px;
+        width: 110px;
+        
+    }
+}
+
+@media (max-width: 133px) {
+    .back {
+        font-size: 8px;
+        width: 100px;
+    }
+}
